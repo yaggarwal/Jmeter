@@ -30,3 +30,11 @@ In thread group we define:
    
 2. Within the thread group put the simple controller (http request). You can copy this from the workbench
 3. Adding Listners to view reports. Right Click Test Plan -> Add Listner -> View Results in Table
+
+
+Reporting Paramters:
+===================
+Through put -  Work done by machine per unit time . In this case it is the no of bytes returned by machine per minute. You need to make sure that
+               thourgh put does not descrease with the increase in load. It should be remain uniform. See this in the graj results. If the graph 
+               shows decrease in through put with the increase in load it means application is not able to cope up with the increasing load.
+Deviation -  Deviation should be smaller. It should not increase with the increasing load.
