@@ -37,6 +37,16 @@ Reporting Paramters:
 Through put -  Work done by machine per unit time . In this case it is the no of bytes returned by machine per minute. You need to make sure that
                thourgh put does not descrease with the increase in load. It should be remain uniform. See this in the graj results. If the graph 
                shows decrease in through put with the increase in load it means application is not able to cope up with the increasing load.
+               
+               - It is also defined as the no of requests serverd by server in 1 minute.
+                 Say we have 4 pertol bunks. Each can server 100 litres of petrol in 1 minute. So throught put of 1 bunk is 100 liters/minute.
+                 Total through put is 400 liters/minutes (as there are 4 bunks.)
+                 Now when 2 cars come  - total through put will be 200 liters -- one - one bunk will serve both cars and 2 are idle.
+                 When 4 cars come - total through put will be 400 - all 4 bunks are used in serving
+                 Now when 10 cars come then also the total through put will remain 400 litres/minute only. This is the maximun it can server.
+                 Other cars must stand in a queue for their chance.
+                 As a analogy consider this petrol bunk as a SERVER MACHINE.
+                 
 Deviation -  Deviation should be smaller. It should not increase with the increasing load.
 
 Additonal Plugins
@@ -105,3 +115,11 @@ TRANSACTION CONTROLLER - Checking the flow end to end. Example: Credit card paym
                          treated as 1 transaction. instaed of reporting for each single equest we report the values for this single transaction
                          i.e end to end.
                          Another example will be new account registrtaion process (multiple steps), money transfer etc
+                         
+                         
+TIMERS
+=======
+
+Constant Timer  - to give a sleep between next thread starts . Timers are not used much in real time.
+
+COnstant Through put timer -> 
