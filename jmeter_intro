@@ -38,3 +38,14 @@ Through put -  Work done by machine per unit time . In this case it is the no of
                thourgh put does not descrease with the increase in load. It should be remain uniform. See this in the graj results. If the graph 
                shows decrease in through put with the increase in load it means application is not able to cope up with the increasing load.
 Deviation -  Deviation should be smaller. It should not increase with the increasing load.
+
+Additonal Plugins
+-------------------
+Download the jars and place in jmeter/lib/ext folder and restart jmeter.
+ Example: step up thread group for simulating real time users
+ There also exists for integration with selenium, hadoop etc
+ 
+Listners:
+Graph results
+View results in table
+View results in tree -  this is handly when we write end to end complete scritping
