@@ -12,3 +12,21 @@ Configure proxy configurations in Jmeter - Right click Workbench -> Add Non Test
      - Target controller - Workbench - HTTP(s) test Script recorder
      - Add any suggested  excudes - to rove request liks CSS , image etc
      -  hit start button
+
+
+
+Putting load
+===========
+1. Right click Test plan -> Thread (Users) -> Add Thread group
+
+Thread here -> is a virtual user that put load on an application
+
+In thread group we define:
+   -> No of thread (users)
+   -> Ramp up time
+   -> Loop Count
+   -> Scheduler -> We can specify the duration in seconds for which test should run. The test will stop after running the specified amount of time
+                   and report the results till which it has executed.
+   
+2. Within the thread group put the simple controller (http request). You can copy this from the workbench
+3. Adding Listners to view reports. Right Click Test Plan -> Add Listner -> View Results in Table
