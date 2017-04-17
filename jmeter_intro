@@ -92,9 +92,16 @@ IF CONTROLLER  -  executes only once but only if confition is true
 INTERLEAVE CONTROLLER - executes requests in a controller alernately. For 1st iteration it will execute 1 first..for second iteration it will
    execute second request in the controller. All requests will not be executed in a single iteration in interleave controller.
 RANDOM CONTROLLER - Its like interleave  but instaed of picking request alternatly it pick requests randomly.
-
+RUNTIME CONTROLLER - It specifies request in this controller for the amount of duration (time) specified. It will executes all requests in this
+                     controller for the amount of time specified.
+                     
 Where they are used:   All these are used in simulating real time scenarios.
 Example: 1. On Payment Page .. process only if credit card is valid. So you can use If controller
          2. On E-Commerce site..one section is for men, one for women, another for general. All people in real time will not be visiting men section
                                 at the same time. Although load is on our application but they are on different pages. So we should use interleave or
                                 random controller for this.
+
+TRANSACTION CONTROLLER - Checking the flow end to end. Example: Credit card payment has 4 step process. So these 4 step (request) should be
+                         treated as 1 transaction. instaed of reporting for each single equest we report the values for this single transaction
+                         i.e end to end.
+                         Another example will be new account registrtaion process (multiple steps), money transfer etc
