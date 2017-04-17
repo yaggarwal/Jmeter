@@ -49,3 +49,29 @@ Listners:
 Graph results
 View results in table
 View results in tree -  this is handly when we write end to end complete scritping
+
+
+Assertions:
+-----------
+In Performance testing you should have aleady some benchmarks defined like:
+ - How many bytes will be returned in response
+ - what is the response code of the request
+ - In how many time (milliseconds) the response should be received.
+
+Verify some valid response for each request to make sure that request was successful.
+Also add  HTTP Cookie Manager for maintaining site sessions. Jmeter will not maintain sessions by default.
+  Right click Thread group -> Add Config element -> HTTP Cookie Manager
+  
+  SIZE ASSERTION
+ - In Performance Testing you must know the size of bytes that will be returned by server. And you must put that in assertion.
+   If it fails it means there is some issue in the application. For this you must use "SIZE ASSERTION"
+   
+  DURATION ASSERTION
+   - put an assertion in how much milliseconds the response must be received
+   
+  HTML Assertions
+   - It simply checks that html response received is valid html as per coding standards.
+   
+  RESPONSE ASSERTION
+   - To simply validate some text in response text
+   - to validate response code
