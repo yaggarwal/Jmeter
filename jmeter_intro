@@ -75,3 +75,19 @@ Also add  HTTP Cookie Manager for maintaining site sessions. Jmeter will not mai
   RESPONSE ASSERTION
    - To simply validate some text in response text
    - to validate response code
+   
+   
+   
+CONTROLLERS
+----------
+Contoller is basically a block which consists of a set of requests to be performed. You can execute certain requests  based on certain conditions.
+
+SIMPLE CONTROLLER
+---------------
+It simply contains a  set of requests.
+
+LOOP CONTROLLER --  executes request in a controller the specified number of time.
+WHILE CONTROLLER -  executes requests in a controller till the condition is true
+IF CONTROLLER  -  executes only once but only if confition is true
+INTERLEAVE CONTROLLER - executes requests in a controller alernately. For 1st iteration it will execute 1 first..for second iteration it will
+   execute second request in the controller. All requests will not be executed in a single iteration in interleave controller.
