@@ -1,0 +1,14 @@
+Initialli there are tow folders:
+
+Test Plan and WorkBench
+
+
+Workbench - used for rough work. You do recording and the paste it into test plan.
+
+For Recording  - you need to set proxy in firefox first.
+Configure proxy configurations in Jmeter - Right click Workbench -> Add Non Test elements -> HTTPS(S) Test Script recorder
+     - Set the port as same in firefox
+     - Grouping - Put each group in new controller
+     - Target controller - Workbench - HTTP(s) test Script recorder
+     - Add any suggested  excudes - to rove request liks CSS , image etc
+     -  hit start button
