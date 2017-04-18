@@ -123,3 +123,11 @@ TIMERS
 Constant Timer  - to give a sleep between next thread starts . Timers are not used much in real time.
 
 COnstant Through put timer -> 
+
+
+Regular Expressions
+===================
+Example:  Hit the first request say hit to login page.
+  In response text (source code of the page , there is username and password that is be filled as credentials). So you need to fetch this
+     username and password from the response using the regular expressions
+   Once you fetch the values, you pass these dynamic values in the second request.
