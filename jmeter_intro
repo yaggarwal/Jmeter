@@ -131,3 +131,11 @@ Example:  Hit the first request say hit to login page.
   In response text (source code of the page , there is username and password that is be filled as credentials). So you need to fetch this
      username and password from the response using the regular expressions
    Once you fetch the values, you pass these dynamic values in the second request.
+   
+  Use PostProcessor -> Regular expression extractor in your request to fetch the values . It should be post processor.
+  
+  
+Data Driven testing
+-------------------
+Reading data from Excel:
+Right CLick Thread group -> Add Config element - > CSV data set config
