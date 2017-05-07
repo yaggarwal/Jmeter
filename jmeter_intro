@@ -152,3 +152,11 @@ in controller specify path as .* (to pick random link)
 
 Html link parser will fetch all links from the previous response. and next request will run for any random link (specified as .*)
 You can specify this in say while loop controller or any thread group with any number of virtual users
+
+
+Bean Shell Sampler
+================
+right click Thread Group -> Bean shell sampler
+
+For writing scripting have log viewe options enabled.  Options (in top menu bar) -> Log Viewer . 
+
